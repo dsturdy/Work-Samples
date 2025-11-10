@@ -257,10 +257,11 @@ elif page == "Project Highlights":
             "- Define a clear, practical measure of investment success aligned with mandate & history.\n"
             "- Review a 65/35 model portfolio and recommend allocation changes with supporting visuals."
         )
+    
     with g2:
-    st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
+        st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
 
-    st.markdown(
+        st.markdown(
         """
         <a href="https://behavorialperformancestudy.streamlit.app/" target="_blank"
            style="display:inline-block; background-color:rgba(255,255,255,0.05);
@@ -274,7 +275,7 @@ elif page == "Project Highlights":
         unsafe_allow_html=True,
     )
 
-    st.markdown(
+        st.markdown(
         """
         Task: Test two competing theories of market behavior among S&P 500 constituents
         (as of Oct 2024) between Q4 2024 and Q1 2025:
