@@ -250,7 +250,7 @@ elif page == "Dashboards":
 elif page == "Project Highlights":
     st.markdown("### Case Studies")
     g1, g2 = st.columns(2)
-    with g2:
+    with g1:
         st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
 
         st.markdown(
