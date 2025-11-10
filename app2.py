@@ -250,13 +250,29 @@ elif page == "Dashboards":
 elif page == "Project Highlights":
     st.markdown("### Case Studies")
     g1, g2 = st.columns(2)
-    with g1:
-        st.markdown("**Global Multi-Asset Strategy Evaluation**")
-        pdf_button("Global Multi-Asset Strategy Evaluation", PDFS["Global Multi-Asset Strategy Evaluation"], key="ph-3")
+    with g2:
+        st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
+
         st.markdown(
-            "- Define a clear, practical measure of investment success aligned with mandate & history.\n"
-            "- Review a 65/35 model portfolio and recommend allocation changes with supporting visuals."
+        """
+        <a href="https://factor-attribution.streamlit.app/" target="_blank"
+           style="display:inline-block; background-color:rgba(255,255,255,0.05);
+                  border:1px solid rgba(255,255,255,0.25);
+                  border-radius:8px; padding:10px 16px;
+                  text-decoration:none; color:#cfe0ff;
+                  font-weight:500; font-size:14px; margin-bottom:10px;">
+           🌐 Open Live Streamlit App
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+        st.markdown(
+            "Task: Test two competing theories of market behavior among S&P 500 constituents (as of Oct 2024) between Q4 2024 and Q1 2025\n"
+            "- Momentum hypothesis: Stocks that recently outperformed will continue to outperform\n"
+            "- Mean reversion hypothesis: Stocks that recently outperformed will underperform"
         )
+
     
     with g2:
         st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
