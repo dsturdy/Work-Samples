@@ -215,7 +215,7 @@ elif page == "Framework":
     st.markdown(
         "- Forecast growth and inflation with economic indicators & market ratios.\n"
         "- Use Granger causality and lead–lag filters to isolate predictive variables.\n"
-        "- Combine via linear models + nonlinear ML to form composite leading indexes.\n"
+        "- Combine via linear models + nonlinear Machine Learning to form composite leading indexes.\n"
         "- Emphasize directional accuracy to anticipate macro turns."
     )
 
