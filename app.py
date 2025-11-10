@@ -131,7 +131,7 @@ st.markdown(
 st.sidebar.markdown("### Portfolio Microsite")
 page = st.sidebar.radio(
     "Navigate",
-    ["Overview", "Framework", "Dashboards", "Project Highlights", "Contact / Downloads"],
+    ["Overview", "Framework", "Dashboards", "Project Highlights"],
 )
 
 # ──────────────────────────────────────────────────────────────
