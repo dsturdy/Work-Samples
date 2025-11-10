@@ -285,6 +285,7 @@ elif page == "Project Highlights":
     )
 
 
+
 elif page == "Contact / Downloads":
     st.subheader("Contact")
     st.write("Email: dylsturdevant@gmail.com")
