@@ -276,14 +276,11 @@ elif page == "Project Highlights":
     )
 
         st.markdown(
-        """
-        Task: Test two competing theories of market behavior among S&P 500 constituents
-        (as of Oct 2024) between Q4 2024 and Q1 2025:
-        - **Momentum hypothesis:** Stocks that recently outperformed will continue to outperform  
-        - **Mean reversion hypothesis:** Stocks that recently outperformed will underperform
-        """,
-        unsafe_allow_html=True,
-    )
+            "Task: Test two competing theories of market behavior among S&P 500 constituents (as of Oct 2024) between Q4 2024 and Q1 2025\n"
+            "- Momentum hypothesis: Stocks that recently outperformed will continue to outperform\n"
+            "- Mean reversion hypothesis: Stocks that recently outperformed will underperform"
+        )
+
 
 
 
