@@ -251,7 +251,7 @@ elif page == "Project Highlights":
     st.markdown("### Case Studies")
     g1, g2 = st.columns(2)
     with g1:
-        st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
+        st.markdown("**Factor Attribution & Regime-Aware Exposures**")
 
         st.markdown(
         """
@@ -268,9 +268,11 @@ elif page == "Project Highlights":
     )
 
         st.markdown(
-            "Task: Test two competing theories of market behavior among S&P 500 constituents (as of Oct 2024) between Q4 2024 and Q1 2025\n"
-            "- Momentum hypothesis: Stocks that recently outperformed will continue to outperform\n"
-            "- Mean reversion hypothesis: Stocks that recently outperformed will underperform"
+            "- **Interactive app** to decompose a fund’s return into **static** and **rolling (36-mo default)** betas across macro & style factors "
+            "(Equity, Rates, Credit, Commodities, FX, Real Yields, Low Risk, Momentum, Quality, Value, Small Cap, Gold, Oil, Volatility, "
+            "**FI Carry**, **FX Carry**, **Trend**, **Local Inflation**).\n"
+            "- Uses monthly data from a local CSV cache; shows **current betas**, top-moving factors, and a **Plotly** view of historical exposures "
+            "to spot regime shifts and explain performance."
         )
 
     
