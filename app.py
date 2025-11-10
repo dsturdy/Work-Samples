@@ -258,10 +258,32 @@ elif page == "Project Highlights":
             "- Review a 65/35 model portfolio and recommend allocation changes with supporting visuals."
         )
     with g2:
-        st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
-        st.markdown(
-            "- Test two competing hypotheses among S&P 500 constituents (momentum vs mean-reversion) across specific periods."
-        )
+    st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
+
+    st.markdown(
+        """
+        <a href="https://behavorialperformancestudy.streamlit.app/" target="_blank"
+           style="display:inline-block; background-color:rgba(255,255,255,0.05);
+                  border:1px solid rgba(255,255,255,0.25);
+                  border-radius:8px; padding:10px 16px;
+                  text-decoration:none; color:#cfe0ff;
+                  font-weight:500; font-size:14px; margin-bottom:10px;">
+           🌐 Open Live Streamlit App
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        """
+        Task: Test two competing theories of market behavior among S&P 500 constituents
+        (as of Oct 2024) between Q4 2024 and Q1 2025:
+        - **Momentum hypothesis:** Stocks that recently outperformed will continue to outperform  
+        - **Mean reversion hypothesis:** Stocks that recently outperformed will underperform
+        """,
+        unsafe_allow_html=True,
+    )
+
 
 elif page == "Contact / Downloads":
     st.subheader("Contact")
