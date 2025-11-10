@@ -261,19 +261,17 @@ elif page == "Project Highlights":
                   border-radius:8px; padding:10px 16px;
                   text-decoration:none; color:#cfe0ff;
                   font-weight:500; font-size:14px; margin-bottom:10px;">
-           🌐 Open Live Streamlit App
+           🌐 Open Factor Attribution App
         </a>
         """,
         unsafe_allow_html=True,
     )
 
         st.markdown(
-            "- **Interactive app** to decompose a fund’s return into **static** and **rolling (36-mo default)** betas across macro & style factors "
-            "(Equity, Rates, Credit, Commodities, FX, Real Yields, Low Risk, Momentum, Quality, Value, Small Cap, Gold, Oil, Volatility, "
-            "**FI Carry**, **FX Carry**, **Trend**, **Local Inflation**).\n"
-            "- Uses monthly data from a local CSV cache; shows **current betas**, top-moving factors, and a **Plotly** view of historical exposures "
-            "to spot regime shifts and explain performance."
-        )
+            "- **Interactive multi-factor dashboard** that decomposes fund and ETF returns into **systematic exposures** across 20+ macro, style, and cross-asset factors (Equity, Rates, Credit, Commodities, FX, Carry, Trend, Inflation, etc.).\n"
+            "- Tracks both **static** and **rolling (36-month)** betas to reveal how exposures evolve through market cycles — identifying **regime shifts** and drivers of performance or drawdown.\n"
+            "- Includes **Plotly visualizations**, current beta snapshots, and **automated ranking of high-variance factors** to highlight where portfolio behavior is changing most rapidly."
+    )
 
     
     with g2:
