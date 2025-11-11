@@ -10,6 +10,14 @@ import streamlit.components.v1 as components
 
 from paths import asset_path
 
+import streamlit as st
+
+# Put this immediately after your imports and set_page_config:
+params = st.experimental_get_query_params()
+if params.get("ping", ["0"])[0] == "1":
+    st.write("ok")
+    st.stop()
+
 # ──────────────────────────────────────────────────────────────
 # CONFIG
 # ──────────────────────────────────────────────────────────────
