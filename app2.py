@@ -24,8 +24,7 @@ PDFS = {
     "Resume": asset_path("pdf", "Dylan_Sturdevant_Resume.pdf"),
     "Strategy Snapshot": asset_path("pdf", "Strategy_Snapshot.pdf"),
     "Leading Indicators Brief": asset_path("pdf", "Leading_Indicators.pdf"),
-    "Financial Conditions Indexes": asset_path("pdf", "Financial_Conditions_Indexes.pdf"),
-    "Global Multi-Asset Strategy Evaluation": asset_path("pdf", "Global_Multi_Asset_Strategy_Evaluation.pdf"),
+    "Financial Conditions Indexes": asset_path("pdf", "Financial_Conditions_Indexes.pdf")
 }
 
 # HTML snapshots bundled in ./assets/html/
