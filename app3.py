@@ -654,7 +654,7 @@ elif page == "Project Highlights":
 
     # ------------------------- g2 -------------------------
     with g2:
-                st.markdown("### Factor Attribution & Regime Analysis")
+        st.markdown("### Factor Attribution & Regime Analysis")
 
         st.markdown(
             """
