@@ -654,10 +654,8 @@ elif page == "Project Highlights":
 
     # ------------------------- g2 -------------------------
     with g2:
-        st.markdown(
-    "<h3 style='font-size:1.35rem; white-space:nowrap;'>Factor Attribution & Regime-Aware Exposures</h3>",
-    unsafe_allow_html=True,
-)
+                st.markdown("### Factor Attribution & Regime Analysis")
+
         st.markdown(
             """
             <a href="https://factor-attribution.streamlit.app/" target="_blank"
