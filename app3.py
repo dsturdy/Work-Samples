@@ -637,7 +637,7 @@ elif page == "Project Highlights":
             " Analyze how extreme deviation readings and BVOL spikes relate to short-term forward returns, and test whether these signals can form a systematic trading strategy on XRT.\n"
             "- **Deviation analysis:** Built scatterplots of 20-day forward returns vs. deviation levels, fitted trend lines, and calculated hit rates across deviation buckets.\n"
             "- **Deviation backtest:** Tested +2.0 deviation triggers with a 30-day cooldown, evaluating 60-day event-aligned performance, hit rates, and trade-level Sharpe ratios.\n"
-            "- **BVOL strategy:** Designed a short-horizon XRT strategy using BVOL percentile/z-score signals and optimized stop-loss rules (fixed % and ATR-based) with historical statistics.."
+            "- **BVOL strategy:** Designed a short-horizon XRT strategy using BVOL percentile/z-score signals and optimized stop-loss rules (fixed % and ATR-based) with historical statistics."
             )
 
     
