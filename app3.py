@@ -22,6 +22,8 @@ PDFS = {
     "Strategy Snapshot": "assets/pdf/Strategy_Snapshot.pdf",
     "Leading Indicators Brief": "assets/pdf/Leading_Indicators.pdf",
     "Financial Conditions Indexes": "assets/pdf/Financial_Conditions_Indexes.pdf",
+    "Global Multi-Asset Strategy Evaluation": asset_path("pdf", "Global_Multi_Asset_Strategy_Evaluation.pdf"),
+
 }
 
 def pdf_button(label: str, file_path: str, key: str):
@@ -592,64 +594,77 @@ elif page == "Project Highlights":
         "<h3 style='text-align:center; margin-top:20px; margin-bottom:10px;'>Case Studies</h3>",
         unsafe_allow_html=True,
     )
-    g1, g2, g3 = st.columns(3)
+
+    # ---- First Row ----
+    g1, g2 = st.columns(2)
+
+    # -------- g1 (NEW) --------
     with g1:
-        st.markdown("**Factor Attribution & Regime-Aware Exposures**")
-
+        st.markdown("**Global Multi-Asset Strategy Evaluation**")
+        pdf_button("Global Multi-Asset Strategy Evaluation",
+                   PDFS["Global Multi-Asset Strategy Evaluation"], 
+                   key="ph-3")
         st.markdown(
-        """
-        <a href="https://factor-attribution.streamlit.app/" target="_blank"
-           style="display:inline-block; background-color:rgba(255,255,255,0.05);
-                  border:1px solid rgba(255,255,255,0.25);
-                  border-radius:8px; padding:10px 16px;
-                  text-decoration:none; color:#cfe0ff;
-                  font-weight:500; font-size:14px; margin-bottom:10px;">
-           🌐 Open Factor Attribution App
-        </a>
-        """,
-        unsafe_allow_html=True,
-    )
-        
-        st.markdown(
-            "- Decomposes fund and ETF returns into exposures across 20+ macro, style, and cross-asset factors..\n"
-            "- Tracks static and rolling betas to show how exposures shift across market regimes..\n"
-            "- Highlights key drivers of performance with Plotly visuals and automated ranking of the most influential factors."
-            )
-
-    with g2: 
-        st.markdown("**Deviation & BVOL Case Study: Regime-Conditioned Signal Behavior**")
-
-        st.markdown(
-        """
-        <a href="https://dylan-s-blackwater-case-study.streamlit.app/" target="_blank"
-           style="display:inline-block; background-color:rgba(255,255,255,0.05);
-                  border:1px solid rgba(255,255,255,0.25);
-                  border-radius:8px; padding:10px 16px;
-                  text-decoration:none; color:#cfe0ff;
-                  font-weight:500; font-size:14px; margin-bottom:10px;">
-           🌐 Open BVOL Case Study
-        </a>
-        """,
-        unsafe_allow_html=True,
-    )
-        
-        st.markdown(
-            " Analyze how extreme deviation readings and BVOL spikes relate to short-term forward returns, and test whether these signals can form a systematic trading strategy on XRT.\n"
-            "- **Deviation analysis:** Built scatterplots of 20-day forward returns vs. deviation levels, fitted trend lines, and calculated hit rates across deviation buckets.\n"
-            "- **Deviation backtest:** Tested +2.0 deviation triggers with a 30-day cooldown, evaluating 60-day event-aligned performance, hit rates, and trade-level Sharpe ratios.\n"
-            "- **BVOL strategy:** Designed a short-horizon XRT strategy using BVOL percentile/z-score signals and optimized stop-loss rules (fixed % and ATR-based) with historical statistics."
-            )
-
-    
-    with g3:
-        st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
-        st.link_button("🌐 Open Behavorial Performance App", "https://behavorialperformancestudy.streamlit.app/")
-        st.markdown(
-            " Test two competing theories of market behavior among S&P 500 constituents (as of Oct 2024) between Q4 2024 and Q1 2025\n"
-            "- **Momentum hypothesis:** Stocks that recently outperformed will continue to outperform\n"
-            "- **Mean reversion hypothesis:** Stocks that recently outperformed will underperform"
+            "- Define a clear, practical measure of investment success aligned with mandate & history.\n"
+            "- Review a 65/35 model portfolio and recommend allocation changes with supporting visuals."
         )
 
+    # -------- g2 (formerly g1) --------
+    with g2:
+        st.markdown("**Factor Attribution & Regime-Aware Exposures**")
+        st.markdown(
+            """
+            <a href="https://factor-attribution.streamlit.app/" target="_blank"
+               style="display:inline-block; background-color:rgba(255,255,255,0.05);
+                      border:1px solid rgba(255,255,255,0.25);
+                      border-radius:8px; padding:10px 16px;
+                      text-decoration:none; color:#cfe0ff;
+                      font-weight:500; font-size:14px; margin-bottom:10px;">
+               🌐 Open Factor Attribution App
+            </a>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            "- Decomposes fund and ETF returns into exposures across 20+ macro, style, and cross-asset factors.\n"
+            "- Tracks rolling betas to show how exposures shift across market regimes.\n"
+            "- Highlights top performance drivers with Plotly visuals and automated factor rankings."
+        )
+
+    # ---- Second Row ----
+    h1, h2 = st.columns(2)
+
+    # -------- h1 (formerly g2) --------
+    with h1:
+        st.markdown("**Deviation & BVOL Case Study: Regime-Conditioned Signal Behavior**")
+        st.markdown(
+            """
+            <a href="https://dylan-s-blackwater-case-study.streamlit.app/" target="_blank"
+               style="display:inline-block; background-color:rgba(255,255,255,0.05);
+                      border:1px solid rgba(255,255,255,0.25);
+                      border-radius:8px; padding:10px 16px;
+                      text-decoration:none; color:#cfe0ff;
+                      font-weight:500; font-size:14px; margin-bottom:10px;">
+               🌐 Open BVOL Case Study
+            </a>
+            """,
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            "- Analyzes extreme deviation readings and BVOL spikes vs. forward returns.\n"
+            "- Backtests +2.0 deviation triggers with a cooldown and evaluates Sharpe & pre/post performance.\n"
+            "- Builds a BVOL-driven short-horizon XRT strategy and optimizes stop-loss rules."
+        )
+
+    # -------- h2 (formerly g3) --------
+    with h2:
+        st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
+        st.link_button("🌐 Open Behavioral Performance App", 
+                       "https://behavorialperformancestudy.streamlit.app/")
+        st.markdown(
+            "- Tests momentum vs. mean-reversion dynamics in S&P 500 constituents.\n"
+            "- Compares whether recent outperformers continue outperforming or revert."
+        )
 
 elif page == "Contact / Downloads":
     st.subheader("Contact")
