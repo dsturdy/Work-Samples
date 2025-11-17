@@ -17,6 +17,39 @@ st.set_page_config(
     menu_items={"Get help": None, "Report a bug": None, "About": None},
 )
 
+.case-card {
+    background-color: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 26px;
+    transition: all 0.2s ease-in-out;
+}
+
+.case-card:hover {
+    border-color: rgba(255,255,255,0.25);
+    background-color: rgba(255,255,255,0.06);
+    transform: translateY(-2px);
+}
+
+.case-card h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.case-card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.case-card li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+
 PDFS = {
     "Resume": "assets/pdf/Dylan_Sturdevant_Resume.pdf",
     "Strategy Snapshot": "assets/pdf/Strategy_Snapshot.pdf",
@@ -600,7 +633,10 @@ elif page == "Project Highlights":
 
     # -------- g1 (NEW) --------
     with g1:
-        st.markdown("**Global Multi-Asset Strategy Evaluation**")
+         st.markdown(f"""
+        <div class="case-card">
+            <h4>Global Multi-Asset Strategy Evaluation</h4>
+        """, unsafe_allow_html=True)
         pdf_button("Global Multi-Asset Strategy Evaluation",
                    PDFS["Global Multi-Asset Strategy Evaluation"], 
                    key="ph-3")
