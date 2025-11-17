@@ -114,11 +114,10 @@ st.markdown(
     <div class="card" style="padding:28px; text-align:center;">
       <h1 style="margin-bottom:6px;">Dylan Sturdevant</h1>
       <div style="color:#9fb3c8; font-size:18px;">
-        Macro & Multi-Asset Research | Systematic Investment Frameworks
+        Macro & Multi-Asset Research | Systematic Research & Investment Analytics
       </div>
       <hr style="margin:14px auto; width:60%; border:0; height:1px; background:rgba(255,255,255,0.1);">
       <div style="color:#9fb3c8; font-size:14px;">
-        Focused on linking leading economic indicators, factor tilts, and market structure insights to portfolio allocation decisions.
       </div>
     </div>
     """,
