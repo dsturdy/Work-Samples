@@ -628,31 +628,33 @@ elif page == "Dashboards":
 
 
 elif page == "Project Highlights":
+
     st.markdown(
-        "<h3 style='text-align:center; margin-top:20px; margin-bottom:10px;'>Case Studies</h3>",
+        "<h3 style='text-align:center; margin-top:20px; margin-bottom:30px;'>Case Studies</h3>",
         unsafe_allow_html=True,
     )
 
-    # ---- First Row ----
+    # --- ROW 1 ---
     g1, g2 = st.columns(2)
 
-    # -------- g1 (NEW) --------
+    # ------------------------- g1 -------------------------
     with g1:
-         st.markdown(f"""
-        <div class="case-card">
-            <h4>Global Multi-Asset Strategy Evaluation</h4>
-        """, unsafe_allow_html=True)
-        pdf_button("Global Multi-Asset Strategy Evaluation",
-                   PDFS["Global Multi-Asset Strategy Evaluation"], 
-                   key="ph-3")
+        st.markdown("### Global Multi-Asset Strategy Evaluation")
+        pdf_button(
+            "Global Multi-Asset Strategy Evaluation",
+            PDFS["Global Multi-Asset Strategy Evaluation"],
+            key="ph-3",
+        )
         st.markdown(
-            "- Define a clear, practical measure of investment success aligned with mandate & history.\n"
-            "- Review a 65/35 model portfolio and recommend allocation changes with supporting visuals."
+            """
+            - Define a clear, practical measure of investment success aligned with mandate & history.  
+            - Review a 65/35 model portfolio and recommend allocation changes with supporting visuals.
+            """
         )
 
-    # -------- g2 (formerly g1) --------
+    # ------------------------- g2 -------------------------
     with g2:
-        st.markdown("**Factor Attribution & Regime-Aware Exposures**")
+        st.markdown("### Factor Attribution & Regime-Aware Exposures")
         st.markdown(
             """
             <a href="https://factor-attribution.streamlit.app/" target="_blank"
@@ -667,17 +669,19 @@ elif page == "Project Highlights":
             unsafe_allow_html=True,
         )
         st.markdown(
-            "- Decomposes fund and ETF returns into exposures across 20+ macro, style, and cross-asset factors.\n"
-            "- Tracks rolling betas to show how exposures shift across market regimes.\n"
-            "- Highlights top performance drivers with Plotly visuals and automated factor rankings."
+            """
+            - Decomposes fund and ETF returns into exposures across 20+ macro, style, and cross-asset factors.  
+            - Tracks rolling betas to show how exposures shift across market regimes.  
+            - Highlights top performance drivers with Plotly visuals and automated factor rankings.
+            """
         )
 
-    # ---- Second Row ----
-    h1, h2 = st.columns(2)
+    # --- ROW 2 ---
+    g3, g4 = st.columns(2)
 
-    # -------- h1 (formerly g2) --------
-    with h1:
-        st.markdown("**Deviation & BVOL Case Study: Regime-Conditioned Signal Behavior**")
+    # ------------------------- g3 -------------------------
+    with g3:
+        st.markdown("### Deviation & BVOL Case Study: Regime-Conditioned Signal Behavior")
         st.markdown(
             """
             <a href="https://dylan-s-blackwater-case-study.streamlit.app/" target="_blank"
@@ -692,20 +696,24 @@ elif page == "Project Highlights":
             unsafe_allow_html=True,
         )
         st.markdown(
-            "- Analyzes extreme deviation readings and BVOL spikes vs. forward returns.\n"
-            "- Backtests +2.0 deviation triggers with a cooldown and evaluates Sharpe & pre/post performance.\n"
-            "- Builds a BVOL-driven short-horizon XRT strategy and optimizes stop-loss rules."
+            """
+            - Analyzes extreme deviation readings & BVOL spikes vs. forward returns.  
+            - Backtests +2.0 deviation triggers with a cooldown and evaluates Sharpe & pre/post performance.  
+            - Builds a BVOL-driven short-horizon XRT strategy and optimizes stop-loss rules.
+            """
         )
 
-    # -------- h2 (formerly g3) --------
-    with h2:
-        st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
-        st.link_button("🌐 Open Behavioral Performance App", 
-                       "https://behavorialperformancestudy.streamlit.app/")
+    # ------------------------- g4 -------------------------
+    with g4:
+        st.markdown("### Behavioral Performance Study: Persistence vs. Reversal Dynamics")
+        st.link_button("🌐 Open Behavioral Performance App", "https://behavorialperformancestudy.streamlit.app/")
         st.markdown(
-            "- Tests momentum vs. mean-reversion dynamics in S&P 500 constituents.\n"
-            "- Compares whether recent outperformers continue outperforming or revert."
+            """
+            - Tests momentum vs. mean-reversion dynamics in S&P 500 constituents.  
+            - Compares whether recent outperformers continue outperforming or revert.
+            """
         )
+
 
 elif page == "Contact / Downloads":
     st.subheader("Contact")
