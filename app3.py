@@ -639,7 +639,7 @@ elif page == "Project Highlights":
 
     # ------------------------- g1 -------------------------
     with g1:
-    st.markdown(
+        st.markdown(
         """
         <div class="case-card">
             <h4>Global Multi-Asset Strategy Evaluation</h4>
