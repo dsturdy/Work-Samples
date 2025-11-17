@@ -595,12 +595,26 @@ elif page == "Project Highlights":
     )
     g1, g2 = st.columns(2)
     with g1:
-        st.markdown("**Global Multi-Asset Strategy Evaluation**")
-        pdf_button("Global Multi-Asset Strategy Evaluation", PDFS["First Eagle Interview Project"], key="ph-3")
+        st.markdown("**Factor Attribution & Regime-Aware Exposures**")
+
         st.markdown(
-            "- Develop a clear and practical measure of investment success for the First Eagle Global Fund, consistent with its mandate and long-term track record.\n"
-            "- Review a 65% Equity / 35% Fixed Income model portfolio and recommend allocation changes, supported by relevant data and visualizations reflecting current market conditions."
-        )
+        """
+        <a href="https://factor-attribution.streamlit.app/" target="_blank"
+           style="display:inline-block; background-color:rgba(255,255,255,0.05);
+                  border:1px solid rgba(255,255,255,0.25);
+                  border-radius:8px; padding:10px 16px;
+                  text-decoration:none; color:#cfe0ff;
+                  font-weight:500; font-size:14px; margin-bottom:10px;">
+           🌐 Open Factor Attribution App
+        </a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+        st.markdown(
+            "- Interactive multi-factor dashboard that decomposes fund and ETF returns into systematic exposures across 20+ macro, style, and cross-asset factors (Equity, Rates, Credit, Commodities, FX, Carry, Trend, Inflation, etc.).\n"
+            "- Tracks both static and rolling betas to reveal how exposures evolve through market cycles, identifying regime shifts and drivers of performance or drawdown.\n"
+            "- Includes Plotly visualizations, current beta snapshots, and automated ranking of high-variance factors to highlight where portfolio behavior is changing most rapidly."
     with g2:
         st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
         st.link_button("🌐 Open Live Streamlit App", "https://behavorialperformancestudy.streamlit.app/")
