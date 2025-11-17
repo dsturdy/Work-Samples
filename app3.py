@@ -388,26 +388,18 @@ elif page == "Dashboards":
     st.markdown(
         """
         Automated dashboards combine **technical analysis** with **macro regime forecasts** to show how markets behave across different economic environments.  
-        They help confirm whether asset trends align with the projected quad — or diverge early.
-
-        <br><br>
-        **Key Focus Areas**
-        <ul style="line-height:1.6; margin-left:10px;">
-            <li><b>Momentum & Volatility:</b> Track short- and medium-term strength across equities, fixed income, FX, and commodities.</li>
-            <li><b>Trend Structure (MAD 20/50):</b> Spot deviations from trend that hint at mean reversion or emerging breakouts.</li>
-            <li><b>Liquidity & Timing (Stoch %D):</b> Identify exhaustion points to gauge where we are within a quad’s phase.</li>
-        </ul>
+        They help confirm whether asset trends align with the projected quad, or diverge early.
 
         <br>
-        Each panel highlights a different layer of market structure — rolling momentum, relative positioning, or cyclical timing.  
+        Each panel highlights a different layer of market structure: rolling momentum, relative positioning, or cyclical timing.  
         Together, they create a real-time lens for how liquidity, sentiment, and risk appetite evolve within and between quads.  
                 
         <br>
         <br>
         <span style="color:gray; font-size:0.9em;">
             These charts represent just a few examples of the dashboards I monitor daily.  
-            Each snapshot is compared against its historical behavior to infer which economic quad the market is pricing in —  
-            and how far along we are within that regime — cross-checked against my Financial Conditions Indexes (FCIs) for confirmation.
+            Each snapshot is compared against its historical behavior to infer which economic quad the market is pricing in  
+            and how far along we are within that regime. Also cross-checked against my Financial Conditions Indexes (FCIs) for confirmation.
         </span>
         """,
         unsafe_allow_html=True,
