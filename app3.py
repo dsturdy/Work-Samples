@@ -22,7 +22,7 @@ PDFS = {
     "Strategy Snapshot": "assets/pdf/Strategy_Snapshot.pdf",
     "Leading Indicators Brief": "assets/pdf/Leading_Indicators.pdf",
     "Financial Conditions Indexes": "assets/pdf/Financial_Conditions_Indexes.pdf",
-    "Global Multi-Asset Strategy Evaluation": asset_path("pdf", "Global_Multi_Asset_Strategy_Evaluation.pdf"),
+    "Global Multi-Asset Strategy Evaluation": "assets/pdf/Global_Multi_Asset_Strategy_Evaluation.pdf"
 
 }
 
