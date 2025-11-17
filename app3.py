@@ -22,7 +22,6 @@ PDFS = {
     "Strategy Snapshot": "assets/pdf/Strategy_Snapshot.pdf",
     "Leading Indicators Brief": "assets/pdf/Leading_Indicators.pdf",
     "Financial Conditions Indexes": "assets/pdf/Financial_Conditions_Indexes.pdf",
-    "First Eagle Interview Project": "assets/pdf/Global_Multi_Asset_Strategy_Evaluation.pdf",
 }
 
 def pdf_button(label: str, file_path: str, key: str):
