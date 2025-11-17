@@ -1,4 +1,4 @@
-# app.py
+x# app.py
 import math
 import base64
 from pathlib import Path
@@ -639,18 +639,30 @@ elif page == "Project Highlights":
 
     # ------------------------- g1 -------------------------
     with g1:
-        st.markdown("### Global Multi-Asset Strategy Evaluation")
-        pdf_button(
-            "Global Multi-Asset Strategy Evaluation",
-            PDFS["Global Multi-Asset Strategy Evaluation"],
-            key="ph-3",
-        )
-        st.markdown(
-            """
-            - Define a clear, practical measure of investment success aligned with mandate & history.  
-            - Review a 65/35 model portfolio and recommend allocation changes with supporting visuals.
-            """
-        )
+    st.markdown(
+        """
+        <div class="case-card">
+            <h4>Global Multi-Asset Strategy Evaluation</h4>
+        """,
+        unsafe_allow_html=True
+    )
+
+    pdf_button(
+        "Global Multi-Asset Strategy Evaluation",
+        PDFS["Global Multi-Asset Strategy Evaluation"],
+        key="ph-3"
+    )
+
+    st.markdown(
+        """
+        - Define a clear, practical measure of investment success aligned with mandate & history.  
+        - Review a 65/35 model portfolio and recommend allocation changes with supporting visuals.
+        """
+    )
+
+    # 🔥 CLOSE THE CARD — this is the part you were missing
+    st.markdown("</div>", unsafe_allow_html=True)
+
 
     # ------------------------- g2 -------------------------
     with g2:
