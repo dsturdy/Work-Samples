@@ -56,7 +56,7 @@ st.markdown("""
 
 
 PDFS = {
-    "Resume": "assets/pdf/Dylan_Sturdevant_Resume.pdf",
+    "Resume": "assets/pdf/Dylan_Sturdevant - Resume.pdf",
     "Strategy Snapshot": "assets/pdf/Strategy_Snapshot.pdf",
     "Leading Indicators Brief": "assets/pdf/Leading_Indicators.pdf",
     "Financial Conditions Indexes": "assets/pdf/Financial_Conditions_Indexes.pdf",
