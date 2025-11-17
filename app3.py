@@ -118,7 +118,6 @@ st.markdown(
       </div>
       <hr style="margin:14px auto; width:60%; border:0; height:1px; background:rgba(255,255,255,0.1);">
       <div style="color:#9fb3c8; font-size:14px;">
-      </div>
     </div>
     """,
     unsafe_allow_html=True,
