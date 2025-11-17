@@ -16,6 +16,8 @@ st.set_page_config(
     layout="wide",
     menu_items={"Get help": None, "Report a bug": None, "About": None},
 )
+st.markdown("""
+<style>
 
 .case-card {
     background-color: rgba(255,255,255,0.04);
@@ -48,6 +50,9 @@ st.set_page_config(
     margin-bottom: 6px;
     font-size: 15px;
 }
+
+</style>
+""", unsafe_allow_html=True)
 
 
 PDFS = {
