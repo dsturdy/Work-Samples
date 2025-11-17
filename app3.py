@@ -611,9 +611,9 @@ elif page == "Project Highlights":
     )
         
         st.markdown(
-            "- Interactive multi-factor dashboard that decomposes fund and ETF returns into systematic exposures across 20+ macro, style, and cross-asset factors (Equity, Rates, Credit, Commodities, FX, Carry, Trend, Inflation, etc.).\n"
-            "- Tracks both static and rolling betas to reveal how exposures evolve through market cycles, identifying regime shifts and drivers of performance or drawdown.\n"
-            "- Includes Plotly visualizations, current beta snapshots, and automated ranking of high-variance factors to highlight where portfolio behavior is changing most rapidly."
+            "- Decomposes fund and ETF returns into exposures across 20+ macro, style, and cross-asset factors..\n"
+            "- Tracks static and rolling betas to show how exposures shift across market regimes..\n"
+            "- Highlights key drivers of performance with Plotly visuals and automated ranking of the most influential factors."
             )
 
     with g2: 
@@ -635,9 +635,9 @@ elif page == "Project Highlights":
         
         st.markdown(
             " Analyze how extreme deviation readings and BVOL spikes relate to short-term forward returns, and test whether these signals can form a systematic trading strategy on XRT.\n"
-            "- **Deviation analysis**: Built scatterplots of 20-day forward returns vs. deviation levels, fitted trend lines, and calculated hit rates across deviation buckets.\n"
-            "- **Deviation backtest**: Tested +2.0 deviation triggers with a 30-day cooldown, evaluating 60-day event-aligned performance, hit rates, and trade-level Sharpe ratios.\n"
-            "- **BVOL strategy**: Designed a short-horizon XRT strategy using BVOL percentile/z-score signals and optimized stop-loss rules (fixed % and ATR-based) with historical statistics.."
+            "- **Deviation analysis:** Built scatterplots of 20-day forward returns vs. deviation levels, fitted trend lines, and calculated hit rates across deviation buckets.\n"
+            "- **Deviation backtest:** Tested +2.0 deviation triggers with a 30-day cooldown, evaluating 60-day event-aligned performance, hit rates, and trade-level Sharpe ratios.\n"
+            "- **BVOL strategy:** Designed a short-horizon XRT strategy using BVOL percentile/z-score signals and optimized stop-loss rules (fixed % and ATR-based) with historical statistics.."
             )
 
     
@@ -646,8 +646,8 @@ elif page == "Project Highlights":
         st.link_button("🌐 Open Behavorial Performance App", "https://behavorialperformancestudy.streamlit.app/")
         st.markdown(
             " Test two competing theories of market behavior among S&P 500 constituents (as of Oct 2024) between Q4 2024 and Q1 2025\n"
-            "- Momentum hypothesis: Stocks that recently outperformed will continue to outperform\n"
-            "- Mean reversion hypothesis: Stocks that recently outperformed will underperform"
+            "- **Momentum hypothesis:** Stocks that recently outperformed will continue to outperform\n"
+            "- **Mean reversion hypothesis:** Stocks that recently outperformed will underperform"
         )
 
 
