@@ -153,7 +153,7 @@ elif page == "Framework":
     #st.caption("Objective, structured, testable.")
 
     # paths
-    img_path  = Path("assets/img/Dorian Road Investment Strategy.jpg")
+    img_path  = Path("assets/img/Dorian_Road_Investment_Strategy.jpg")
     html_path_1 = Path("assets/html/CAGR_per_quad_nophase_Q1.html")
     html_path_2 = Path("assets/html/CAGR_per_quad_nophase_Q2.html")
     html_path_3 = Path("assets/html/CAGR_per_quad_nophase_Q3.html")
