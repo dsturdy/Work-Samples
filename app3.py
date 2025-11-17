@@ -203,7 +203,7 @@ elif page == "Framework":
                 <ul>
                   <li>Identify the directional momentum of growth and inflation</li>
                   <li>Macro environments are classified by whether these signals are accelerating/decelerating</li>
-                  <li>If growth remains strong while inflation momentum fades, we identify Quad 1 (Goldilocks)</li>
+                  <li>If growth remains strong while inflation momentum fades, <br> we identify Quad 1 (Goldilocks)</li>
                   <li>When the direction of both growth and inflation is rising, we classify the environment as Quad 2 (Reflation)</li>
                   <li>When growth is falling and inflation is rising, the regime shifts to Quad 3 (Stagflation)</li>
                   <li>If both growth and inflation are decelerating, we enter Quad 4 (Deflation)</li>
