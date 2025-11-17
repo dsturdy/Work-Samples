@@ -610,11 +610,12 @@ elif page == "Project Highlights":
         """,
         unsafe_allow_html=True,
     )
-        )
+        
         st.markdown(
             "- Interactive multi-factor dashboard that decomposes fund and ETF returns into systematic exposures across 20+ macro, style, and cross-asset factors (Equity, Rates, Credit, Commodities, FX, Carry, Trend, Inflation, etc.).\n"
             "- Tracks both static and rolling betas to reveal how exposures evolve through market cycles, identifying regime shifts and drivers of performance or drawdown.\n"
             "- Includes Plotly visualizations, current beta snapshots, and automated ranking of high-variance factors to highlight where portfolio behavior is changing most rapidly."
+            )
     with g2:
         st.markdown("**Behavioral Performance Study: Persistence vs. Reversal Dynamics**")
         st.link_button("🌐 Open Live Streamlit App", "https://behavorialperformancestudy.streamlit.app/")
