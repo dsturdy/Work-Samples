@@ -617,7 +617,7 @@ elif page == "Project Highlights":
             )
 
     with g2: 
-    st.markdown("**Deviation & BVOL Case Study: Regime-Conditioned Signal Behavior**")
+        st.markdown("**Deviation & BVOL Case Study: Regime-Conditioned Signal Behavior**")
 
         st.markdown(
         """
