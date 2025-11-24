@@ -172,10 +172,20 @@ if page == "Overview":
     with col1:
         st.subheader("What I build")
         st.markdown(
-            "- Empirical frameworks that quantify how shifts in growth and inflation momentum define economic regimes.\n"
-            "- Dashboards and analytics that monitor leading indicators, financial conditions, and asset behavior through each regime.\n"
-            "- Data-driven tools for testing hypotheses about macro drivers and forecasting regime transitions."
+            "- Empirical frameworks that identify when growth and inflation momentum are turning, helping guide pro-cycle vs. defensive positioning.\n"
+            "- Dashboards that connect leading indicators, market behavior, and financial conditions to real portfolio decisions.\n"
+            "- Tools for testing investment hypotheses: which signals lead which assets, how factors react in each regime, and where risks are building.\n"
+            "- Models that translate macro signals into **tilts, timing, and risk allocation**, not academic forecasts."
         )
+
+        st.subheader("How this improves investment decisions")
+        st.markdown(
+            "- Identifies when markets are transitioning between regimes, allowing for timely pro-cycle or defensive tilts.\n"
+            "- Highlights which assets have historically outperformed in similar macro environments, improving return per unit of risk.\n"
+            "- Flags divergences between price action, liquidity, and leading indicators, providing early warning before positioning breaks.\n"
+            "- Simplifies complex macro data into a small set of actionable signals that PMs can apply in daily or weekly decision cycles."
+        )
+
         st.caption("This microsite provides a concise overview of my research frameworks and tools for easy internal review.")
     with col2:
         st.subheader("Downloads")
@@ -370,18 +380,18 @@ elif page == "Framework":
     st.subheader("Data to Allocation")
 
     st.markdown(
-        """
-        - The economic quad framework directly informs portfolio tilts and risk allocation.  
-        - Tilt toward asset classes with favorable risk/reward profiles in each regime, guided by backtests and live signals.  
-        - Prioritize capital preservation during regime transitions; reduce exposure to vulnerable assets.  
-        - The real edge lies in anticipating regime shifts before they become consensus.  
-        <br>
-        <span style="color:gray; font-size:0.9em;">
-            More detail and methodology can be seen in the PDF downloads below
-        </span>
-        """,
-        unsafe_allow_html=True,
-    )
+    """
+    - Regime signals translate directly into **positioning**: overweight assets that tend to perform well in the current quad and underweight those that tend to struggle.  
+    - Backtests show how each asset class behaves when growth and inflation are accelerating or decelerating. This supports tactical tilts based on evidence rather than opinion.  
+    - Leading indicators and FCIs help identify **regime shifts early**, which gives time to rotate positions before consensus adjusts.  
+    - Emphasis on risk-aware allocation: reduce drawdown risk during transitions and redeploy capital when signals confirm stability.  
+    <br>
+    <span style="color:gray; font-size:0.9em;">
+        More methodology and examples are included in the PDFs below.
+    </span>
+    """
+)
+
 
     st.divider()
     st.markdown("**PDF Downloads**")
