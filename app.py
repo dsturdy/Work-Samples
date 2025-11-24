@@ -389,7 +389,8 @@ elif page == "Framework":
     <span style="color:gray; font-size:0.9em;">
         More methodology and examples are included in the PDFs below.
     </span>
-    """
+    """,
+    unsafe_allow_html = True
 )
 
 
