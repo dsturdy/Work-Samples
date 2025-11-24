@@ -135,7 +135,7 @@ if page == "Overview":
             "- Empirical frameworks that identify when growth and inflation momentum are turning, helping guide pro-cycle vs. defensive positioning.\n"
             "- Dashboards that connect leading indicators, market behavior, and financial conditions to real portfolio decisions.\n"
             "- Tools for testing investment hypotheses: which signals lead which assets, how factors react in each regime, and where risks are building.\n"
-            "- Models that translate macro signals into **tilts, timing, and risk allocation**, not academic forecasts."
+            "- Models that translate macro signals into tilts, timing, and risk allocation, not academic forecasts."
         )
 
         st.subheader("How this improves investment decisions")
@@ -341,9 +341,9 @@ elif page == "Framework":
 
     st.markdown(
     """
-    - Regime signals translate directly into **positioning**: overweight assets that tend to perform well in the current quad and underweight those that tend to struggle.  
+    - Regime signals translate directly into positioning: overweight assets that tend to perform well in the current quad and underweight those that tend to struggle.  
     - Backtests show how each asset class behaves when growth and inflation are accelerating or decelerating. This supports tactical tilts based on evidence rather than opinion.  
-    - Leading indicators and FCIs help identify **regime shifts early**, which gives time to rotate positions before consensus adjusts.  
+    - Leading indicators and FCIs help identify regime shifts early, which gives time to rotate positions before consensus adjusts.  
     - Emphasis on risk-aware allocation: reduce drawdown risk during transitions and redeploy capital when signals confirm stability.  
     <br>
     <span style="color:gray; font-size:0.9em;">
