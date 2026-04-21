@@ -669,7 +669,7 @@ elif page == "Project Highlights":
 
         st.markdown(
             """
-            <a href="https://factor-attribution.streamlit.app/" target="_blank"
+            <a href="https://dylan-s-factor-attribution.streamlit.app/" target="_blank"
                style="display:inline-block; background-color:rgba(255,255,255,0.05);
                       border:1px solid rgba(255,255,255,0.25);
                       border-radius:8px; padding:10px 16px;
